@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+
+
+
+/*Css de teste gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/*Nav-Bar*/
+nav{
+    width: 100vw;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    
+}
+
+nav div{
+    margin: 0 auto;
+    width: 914px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+#img-logo{
+    width: 22px;
+    margin-right: 20px;
+
+}
+
+#nome-logo{
+    width: 103px;
+    height: 29px;
+}
+
+#linha-v{
+    height: 10px;
+    width: 1px;
+    background-color: black;
+}
+nav input{
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+nav #icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav #icons img{
+    margin-left: 20px;
+}
+
+
+/*Conteudo Principal*/
+main{
+    
+    width: 914px;
+    margin: 54px auto;
+    display: flex;
+    
+}
+
+#menu-principal{
+    width: 600px;
+    
+}
+
+#menu-lateral{
+    width: calc(100% - 600px);
+    
+
+}
+
+
+
+#scroll-lateral-perfis{
+    margin: 25px 0;
+    width: 100%;
+    height: 118px;
+    overflow-x:scroll;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+
+}
+
+#scroll-lateral-perfis::-webkit-scrollbar{
+    width: 0;
+    display: none;
+}
+
+
+
+#perfil-users img {
+    border: 3px solid red;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 10px;
+
+    
+}
+
+#posts{
+    width: 100%;
+    height: 1000px;
+    background-color: green;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+#menu-lateral{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+    
+}
+
+#menu-lateral a{
+    color: #139EF2;
+    font-weight: 500;
+
+}
+
+#your-profile{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#your-profile img{
+    width: 56px;
+}
+
+
+
+#sugestoes{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#perfil-sugestao{
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#perfil-img{
+    display: flex;
+    
+}
+
+
+.infos{
+    margin-top: 25px;
+    font-size: 11px;
+    font-weight: 400px;
+    color: #C7C7C7;
+}
+
+#fixed{
+    position: fixed;
+}
