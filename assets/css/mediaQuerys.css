@@ -43,7 +43,13 @@
     }
 
     #menu-principal{
-        width: 80vw;
+        width: 95vw;
+    }
+
+    #scroll-lateral-perfis{
+        border: none;
+        margin: 0;
+
     }
 
     .img-post{
