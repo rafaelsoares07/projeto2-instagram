@@ -4,6 +4,15 @@
 
 
 /*Css de teste gerais*/
+
+.ml{
+    margin-left: 8px;
+}
+
+.opaco{
+    color: rgba(76,65, 40, 0.5);
+    font-size: 13px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +47,10 @@ nav div{
     
 }
 
+.ajuste-icons{
+    display: none;
+}
+
 #img-logo{
     width: 22px;
     margin-right: 20px;
@@ -55,12 +68,12 @@ nav div{
     background-color: black;
 }
 nav input{
-    width: 215px;
-    height: 28px;
+    width: 250px;
+    height: 30px;
     border: 1px solid #DBDBDB;
     text-align: center;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 nav #icons{
@@ -105,8 +118,16 @@ main{
     border: 1px solid #DBDBDB;
     display: flex;
     align-items: center;
+    
 
 }
+
+.seta{
+    
+    width: 26px;
+}
+
+
 
 #scroll-lateral-perfis::-webkit-scrollbar{
     width: 0;
@@ -127,7 +148,7 @@ main{
 #posts{
     width: 100%;
     height: 1000px;
-    background-color: green;
+    
   
 }
 
@@ -137,15 +158,14 @@ main{
 
 
 
-
-
+/*Conteuudo lateral*/
 
 
 #menu-lateral{
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 16px;
+    padding: 16px 0 16px 16px;
     
 }
 
@@ -198,4 +218,73 @@ main{
 
 #fixed{
     position: fixed;
+}
+
+
+
+
+/*CSS DOS POSTS*/
+
+.l-post{
+    border: 1px solid #C7C7C7;
+    margin-bottom: 30px;
+}
+
+.cabecalho-post{
+    height:62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px;
+}
+.cabecalho-post img{
+    margin-right: 10px;
+}
+
+.imgAndtext{
+justify-content: space-around;
+display: flex;
+align-items: center;
+}
+
+
+.img-post{
+    height: 600px;
+   
+
+}
+
+.img-post img{
+    width: 100%;
+}
+
+
+.reactions-post{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;;
+    
+}
+
+
+.coments-post{
+    height: 30px;
+    
+}
+
+
+
+.interacoes{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.interacoes p{
+    font-size: 14px;
+
 }

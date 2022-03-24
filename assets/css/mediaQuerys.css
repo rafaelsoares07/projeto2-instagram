@@ -1,0 +1,46 @@
+.d-none{
+    display: none;
+}
+
+@media (max-width:935px){
+        
+   nav div{
+       width: 90%;
+   }
+    
+
+
+    main{
+        width: 95vw;
+    }
+    #menu-lateral{
+        display: none;
+    }
+    #menu-principal{
+        
+        margin: 0 auto;
+    }
+}
+
+
+
+@media (max-width:614px){
+    .ocultar-l-mobile{
+        display: none;
+    }
+
+    nav #icons{
+        display: none;
+    
+    }
+
+    nav div{
+        justify-content: space-between;
+    }
+
+    
+    .ajuste-icons{
+        display: block;
+    }
+   
+ }

@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaQuerys.css">
+  
 
     <title>Instagram</title>
 </head>
@@ -17,15 +20,17 @@
     <nav>
         <div class="conteudo-nav">
 
-            <div>
+            <div id="nav-mobile" >
                 <img id="img-logo" src="assets/imgs/logo-instagram.svg" alt="">
                 
                 <img id="nome-logo" src="assets/imgs/logo.png" alt="">
+
+                <img class="ajuste-icons" src="assets/imgs/aviao.png" alt="">
             </div>
 
           
 
-            <div>
+            <div class="ocultar-l-mobile">
                 <input type="text" placeholder="Pesquisar">
             </div>
 
@@ -63,6 +68,7 @@
                 <div id="perfil-users">
                     <img src="assets/imgs/wawawiwacomicsa 1.png" alt="">
                 </div>
+                
                 <div id="perfil-users">
                     <img src="assets/imgs/nathanwpylestrangeplanet 1.png" alt="">
                 </div>
@@ -76,13 +82,131 @@
                     <img src="assets/imgs/9gag 1.svg" alt="">
                 </div>
 
+                <img class="seta" src="assets/imgs/seta-direita.png" alt="">
+
 
 
             </div>
 
             <div id="posts">
 
+                <div class="l-post">
+                    <div class="cabecalho-post">
+                        <div class="imgAndtext">
+                            <img src="assets/imgs/meowed 2.png" alt="">
+                            <p>meowed</p>
+                        </div>
 
+                        <div>
+                            <img src="assets/imgs/ellipsis-horizontal 1.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="img-post">
+                        <img src="assets/imgs/gato-telefone 1.png" alt="">
+                    </div>
+
+                    <div class="reactions-post">
+                        <div>
+                            <img src="assets/imgs/heart-outline 1.png" alt="">
+                            <img src="assets/imgs/Vector.png" alt="">
+                            <img src="assets/imgs/aviao.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="assets/imgs/Vector (4).svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="interacoes">
+                        <img class="ml" src="assets/imgs/respondeai 2.png" alt="">
+                        <p class="ml" >Curtido por <strong> Respondeai</strong> e <strong>outras 101.589 pessoas</strong></p>
+                    </div>
+
+                    <div class="coments-post">
+
+                    </div>
+                </div>
+
+                <div class="l-post">
+                    <div class="cabecalho-post">
+                        <div class="imgAndtext">
+                            <img src="assets/imgs/barked 2.png" alt="">
+                            <p>barked</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/imgs/ellipsis-horizontal 1.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="img-post">
+                        <img src="assets/imgs/dog 1.png" alt="">
+                    </div>
+
+                    <div class="reactions-post">
+                        <div>
+                            <img src="assets/imgs/heart-outline 1.png" alt="">
+                            <img src="assets/imgs/Vector.png" alt="">
+                            <img src="assets/imgs/aviao.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="assets/imgs/Vector (4).svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="interacoes">
+                        <img class="ml" src="assets/imgs/respondeai 2.png" alt="">
+                        <p class="ml" >Curtido por <strong> Respondeai</strong> e <strong>outras 101.589 pessoas</strong></p>
+                    </div>
+
+                    <div class="coments-post">
+
+                    </div>
+                </div>
+
+                <div class="l-post">
+                    <div class="cabecalho-post">
+                        <div class="imgAndtext">
+                            <img src="assets/imgs/chibirdart 1.png" alt="">
+                            <p>chibidart</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/imgs/ellipsis-horizontal 1.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="img-post">
+                        <img src="assets/imgs/gato-telefone 1.png" alt="">
+                    </div>
+
+                    <div class="reactions-post">
+                        <div>
+                            <img src="assets/imgs/heart-outline 1.png" alt="">
+                            <img src="assets/imgs/Vector.png" alt="">
+                            <img src="assets/imgs/aviao.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="assets/imgs/Vector (4).svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="interacoes">
+                        <img class="ml" src="assets/imgs/respondeai 2.png" alt="">
+                        <p class="ml" >Curtido por <strong> Respondeai</strong> e <strong>outras 101.589 pessoas</strong></p>
+                    </div>
+
+                    <div class="coments-post">
+
+                    </div>
+                </div>
+                    
             </div>
         </div>
 
@@ -94,8 +218,8 @@
                 <img src="assets/imgs/catanacomics 1.png" alt="">
 
                 <div>
-                    <p>RafaelSoares</p>
-                    <p>Natalina</p>
+                    <p class="ml">RafaelSoares</p>
+                    <p class="ml opaco">Natalina</p>
                 </div>
             </div>
 
@@ -110,8 +234,8 @@
                     <img src="assets/imgs/badvibesmemes 1.png" alt="">
 
                     <div>
-                        <p>bad.vibe.memes</p>
-                        <p>segue voce</p>
+                        <p class="ml">bad.vibe.memes</p>
+                        <p class="ml opaco">segue voce</p>
                     </div>
 
                 </div>
@@ -121,11 +245,11 @@
 
             <div id="perfil-sugestao">
                 <div id="perfil-img">
-                    <img src="assets/imgs/badvibesmemes 1.png" alt="">
+                    <img src="assets/imgs/smallcutecats 1.png" alt="">
 
                     <div>
-                        <p>bad.vibe.memes</p>
-                        <p>segue voce</p>
+                        <p class="ml">bad.vibe.memes</p>
+                        <p class="ml opaco">segue voce</p>
                     </div>
 
                 </div>
@@ -138,8 +262,8 @@
                     <img src="assets/imgs/chibirdart 1.png" alt="">
 
                     <div>
-                        <p>bad.vibe.memes</p>
-                        <p>segue voce</p>
+                        <p class="ml">bad.vibe.memes</p>
+                        <p class="ml opaco">segue voce</p>
                     </div>
 
                 </div>
@@ -152,8 +276,8 @@
                     <img src="assets/imgs/razoesparaacreditar 1.png" alt="">
 
                     <div>
-                        <p>bad.vibe.memes</p>
-                        <p>segue voce</p>
+                        <p class="ml">bad.vibe.memes</p>
+                        <p class="ml opaco">segue voce</p>
                     </div>
 
                 </div>
@@ -166,8 +290,8 @@
                     <img src="assets/imgs/adorableanimals 1.png" alt="">
 
                     <div>
-                        <p>bad.vibe.memes</p>
-                        <p>segue voce</p>
+                        <p class="ml ">bad.vibe.memes</p>
+                        <p class="ml opaco">segue voce</p>
                     </div>
 
                 </div>
