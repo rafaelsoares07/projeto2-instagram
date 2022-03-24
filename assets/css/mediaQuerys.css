@@ -25,6 +25,10 @@
 
 
 @media (max-width:614px){
+
+    main{
+        margin: 0;
+    }
     .ocultar-l-mobile{
         display: none;
     }
@@ -43,7 +47,7 @@
     }
 
     #menu-principal{
-        width: 95vw;
+        width: 100vw;
     }
 
     #scroll-lateral-perfis{
