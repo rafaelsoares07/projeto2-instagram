@@ -37,10 +37,23 @@
     nav div{
         justify-content: space-between;
     }
-
     
     .ajuste-icons{
         display: block;
+    }
+
+    #menu-principal{
+        width: 80vw;
+    }
+
+    .img-post{
+        height: auto;
+       
+    
+    }
+    
+    .img-post img{
+        width: 100%;
     }
    
  }
