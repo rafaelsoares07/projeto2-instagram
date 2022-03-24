@@ -251,13 +251,28 @@ align-items: center;
 .img-post{
     height: 600px;
    
-
 }
 
 .img-post img{
     width: 100%;
 }
 
+.video-post{
+    position: relative;
+}
+
+.video-post video{
+    width:100%;
+    height: auto;
+}
+
+.btn-play{
+    width: 45px;
+    position: absolute;
+    top: 125px;
+    left: 290px;
+    z-index: 3;
+}
 
 .reactions-post{
     height: 40px;
