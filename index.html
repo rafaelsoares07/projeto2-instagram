@@ -48,9 +48,12 @@
         <div id="menu-principal">
             <div id="scroll-lateral-perfis">
 
-                <div id="perfil-users">
-                    <img src="assets/imgs/9gag 1.svg" alt="">
+                <div class="bordas-story">
+                    <div id="perfil-users">
+                        <img src="assets/imgs/9gag 1.svg" alt="">
+                    </div>
                 </div>
+                
 
                 <div id="perfil-users">
                     <img src="assets/imgs/meowed 1.png" alt="">
@@ -407,11 +410,10 @@
 
 
     <script>
-        document.querySelector('.btn-play').addEventListener('click',(element)=>{
-            let video = document.getElementsByClassName('btn-play')
-
-            element
-            console.log(video)
+        document.querySelector('video').addEventListener('click',()=>{
+            
+            console.log("clicou ")
+            
 
         })
     </script>

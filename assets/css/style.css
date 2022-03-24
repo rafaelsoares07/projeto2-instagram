@@ -135,12 +135,13 @@ main{
 
 
 
-#perfil-users img {
-    border: 3px solid red;
-    border-radius: 50%;
-    background-color: white;
-    margin-left: 10px;
 
+#perfil-users img {
+    
+    border-radius: 50%;
+    background-image: linear-gradient(360deg, rgba(241, 145, 20, 0.966),rgb(253, 47, 57), rgb(238, 20, 191));
+    padding: 2.3px;
+    margin-left: 10px;
     
 }
 
@@ -165,6 +166,10 @@ main{
     flex-direction: column;
     height: auto;
     padding: 16px 0 16px 16px;
+    position: fixed;
+    left: calc(100vw - 38%);
+    width: 300px;
+    
     
 }
 
@@ -273,9 +278,15 @@ align-items: center;
 .btn-play{
     width: 45px;
     position: absolute;
-    top: calc(50% - 45px);
-    left: calc(50% - 45px);
-    z-index: 3;
+    
+    /*Truque para centralizar elemento no meio*/
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: -20px;
+    margin: auto;
+
+    
 }
 
 .reactions-post{
