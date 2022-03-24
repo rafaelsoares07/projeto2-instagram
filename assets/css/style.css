@@ -247,6 +247,10 @@ display: flex;
 align-items: center;
 }
 
+.imgAndtext img{
+    width: 32px;
+    border-radius: 50%;
+}
 
 .img-post{
     height: 600px;
@@ -269,8 +273,8 @@ align-items: center;
 .btn-play{
     width: 45px;
     position: absolute;
-    top: 125px;
-    left: 290px;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
     z-index: 3;
 }
 
