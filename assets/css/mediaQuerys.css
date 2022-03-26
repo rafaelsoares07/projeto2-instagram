@@ -76,4 +76,8 @@
     .side-bar-bottom{
         display: flex;
     }
+
+    .icons-coments img{
+        display: none;
+    }
  }

@@ -5,6 +5,9 @@
 
 /*Css de teste gerais*/
 
+strong{
+    font-weight: bold;
+}
 .ml{
     margin-left: 8px;
 }
@@ -294,7 +297,7 @@ align-items: center;
 .btn-play{
     width: 45px;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.5;
     
     /*Truque para centralizar elemento no meio*/
     bottom: 0;
@@ -309,7 +312,7 @@ align-items: center;
     width: 45px;
     position: absolute;
     display: none;
-    opacity: 0.3;
+    opacity: 0.5;
     
     /*Truque para centralizar elemento no meio*/
     bottom: 0;
@@ -347,7 +350,7 @@ align-items: center;
     /*Truque para centralizar elemento no meio*/
     bottom: 30px;
     left: 90%;
-    opacity: 0.6;
+    
 
     
 }
@@ -425,14 +428,33 @@ align-items: center;
     display: flex;
     align-items: center;
     margin-left: 10px;
+    width: calc(100% - 200px);
 }
 .area-input-coments input{
     border: none;
+    flex-basis: 1;
+    flex-grow: 1;
 }
+
+.area-input-coments button{
+    color: #B2DFFC;
+    border: none;
+    width: 100px;
+    height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.area-input-coments button:hover{
+    color: #0095f6;
+}
+
 
 .imgAndInput img{
     width: 29px;
 }
+
+
 
 
 
@@ -545,11 +567,5 @@ box-shadow: 2px 2px 2px 1px ;
 
 
 
-input{
-    color: aqua;
-    width: 100%;
-}
 
-#section-area{
-    height: 60vh;
-}
+
