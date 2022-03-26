@@ -72,4 +72,8 @@
         width: 100%;
     }
    
+
+    .side-bar-bottom{
+        display: flex;
+    }
  }

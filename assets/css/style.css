@@ -146,7 +146,15 @@ main{
     
     border-radius: 50%;
     background-image: linear-gradient(360deg, rgba(241, 145, 20, 0.966),rgb(253, 47, 57), rgb(238, 20, 191));
-    padding: 2.3px;
+    padding: 2.7px;
+    margin-left: 10px;
+    
+}
+
+#bestFriends{
+    border-radius: 50%;
+    background-image: linear-gradient(360deg, rgba(68, 236, 132, 0.966),rgb(62, 168, 48), rgb(91, 248, 0));
+    padding: 2.7px;
     margin-left: 10px;
     
 }
@@ -371,6 +379,7 @@ align-items: center;
 }
 
 
+
 .coments-post{
     height: auto;
     
@@ -418,6 +427,32 @@ align-items: center;
 }
 
 
+
+/*SIDEBAR BOTTOM*/
+.side-bar-bottom{
+position: fixed;
+bottom: 0;
+height: 54px;
+max-width: 612px;
+width: 100%;
+background-color: #fff;
+
+display: flex;
+align-items: center;
+display: none;
+
+box-shadow: 2px 2px 2px 1px ;
+
+}
+
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;    
+    z-index: 2;
+
+}
 
 
 
