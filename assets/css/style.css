@@ -100,15 +100,9 @@ main{
     width: 600px;
     
 }
-
 #menu-lateral{
     width: calc(100% - 600px);
-    
-
 }
-
-
-
 #scroll-lateral-perfis{
     margin: 25px 0;
     width: 100%;
@@ -117,24 +111,18 @@ main{
     border: 1px solid #DBDBDB;
     display: flex;
     align-items: center;
-    
-
+    position: relative; 
 }
-
 .seta{
-    
+    position: absolute;
+    left: 500px;
     width: 26px;
 }
-
-
 
 #scroll-lateral-perfis::-webkit-scrollbar{
     width: 0;
     display: none;
 }
-
-
-
 
 #perfil-users img {
     
