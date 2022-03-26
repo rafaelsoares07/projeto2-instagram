@@ -281,6 +281,9 @@
                         <p class="time-video"></p>
                         <img class="btn-pause" src="assets/imgs/pausa.png" alt="">
 
+                        <img class="btnNoMuted" src="assets/imgs/volume.png" alt="">
+                        <img class="btnMuted" src="assets/imgs/mute.png" alt="">
+
                     </div>
 
                     <div class="reactions-post">
@@ -341,6 +344,9 @@
                         <img class="btn-play" src="assets/imgs/toque.png" alt="">
                         <p class="time-video"></p>
                         <img class="btn-pause" src="assets/imgs/pausa.png" alt="">
+
+                        <img class="btnNoMuted" src="assets/imgs/volume.png" alt="">
+                        <img class="btnMuted" src="assets/imgs/mute.png" alt="">
 
                     </div>
 
@@ -546,6 +552,48 @@
                 btnPlay.style.display = "block"
                 
             })
+        })
+
+
+
+
+        //BOTÃO PARA ATIVAR E DESATIVAR SOM//
+        
+        document.querySelectorAll('.btnNoMuted').forEach((el)=>{
+
+            el.addEventListener('click', ()=>{
+            
+            el.style.display = 'none';
+
+            let btnSemSom=el.nextElementSibling
+            console.log(btnSemSom)
+
+            btnSemSom.style.display = 'block';
+            
+
+            let tirarSom = el.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling;
+            tirarSom.muted = true;
+            
+        
+            })
+
+
+        })
+
+
+        document.querySelectorAll('.btnMuted').forEach((el)=>{
+            el.addEventListener('click',()=>{
+                el.style.display = 'none';
+
+                let btnColocarSom = el.previousElementSibling
+                console.log(btnColocarSom)
+                btnColocarSom.style.display = 'block';
+
+                let video = el.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling
+
+                video.muted = false;
+            })
+
         })
     
         

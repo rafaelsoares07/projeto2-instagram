@@ -283,6 +283,7 @@ align-items: center;
 .btn-play{
     width: 45px;
     position: absolute;
+    opacity: 0.3;
     
     /*Truque para centralizar elemento no meio*/
     bottom: 0;
@@ -297,6 +298,7 @@ align-items: center;
     width: 45px;
     position: absolute;
     display: none;
+    opacity: 0.3;
     
     /*Truque para centralizar elemento no meio*/
     bottom: 0;
@@ -306,6 +308,27 @@ align-items: center;
     margin: auto;
     
 }
+
+.btnNoMuted , .btnMuted{
+
+    width: 30px;
+    position: absolute;
+    background-color: #746d6d;
+    border-radius: 50%;
+    padding: 5px;
+    /*Truque para centralizar elemento no meio*/
+    bottom: 30px;
+    left: 90%;
+    opacity: 0.6;
+
+    
+}
+
+.btnMuted{
+    display: none;
+}
+
+
 
 
 .time-video{
