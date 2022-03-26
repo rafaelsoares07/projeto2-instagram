@@ -172,21 +172,17 @@ main{
     flex-direction: column;
     padding: 16px 0 16px 16px;
     width: 300px;  
-    
-
 }
 
 .position{
     
     position: sticky;
     top:50px;
-    
 }
 
 #menu-lateral a{
     color: #139EF2;
     font-weight: 500;
-
 }
 
 #your-profile{
@@ -200,15 +196,11 @@ main{
     width: 56px;
 }
 
-
-
 #sugestoes{
     
     display: flex;
     justify-content: space-between;
 }
-
-
 
 #perfil-sugestao{
     margin: 8px 0;
@@ -216,12 +208,10 @@ main{
     justify-content: space-between;
     align-items: center;
 }
-
 #perfil-img{
     display: flex;
     
 }
-
 
 .infos{
     margin-top: 25px;
@@ -229,7 +219,6 @@ main{
     font-weight: 400px;
     color: #C7C7C7;
 }
-
 #fixed{
     position: fixed;
 }
@@ -282,7 +271,7 @@ align-items: center;
     display: flex;
     align-items: center;
     background-color: black;
-    height: 598px;
+    padding: 80px 0;
 }
 
 .video-post video{
