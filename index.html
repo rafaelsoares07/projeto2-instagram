@@ -105,8 +105,10 @@
 
                     </div>
 
-                    <div class="img-post">
+                    <div class="img-post curtida">
                         <img src="assets/imgs/gato-telefone 1.png" alt="">
+
+                        <img class="like" src="assets/imgs/heart.png" alt="">
                     </div>
 
                     <div class="reactions-post">
@@ -159,12 +161,14 @@
 
                         <div>
                             <img src="assets/imgs/ellipsis-horizontal 1.svg" alt="">
+            
                         </div>
 
                     </div>
 
-                    <div class="img-post">
+                    <div class="img-post curtida">
                         <img src="assets/imgs/dog 1.png" alt="">
+                        <img class="like" src="assets/imgs/heart.png" alt="">
                     </div>
 
                     <div class="reactions-post">
@@ -219,8 +223,9 @@
 
                     </div>
 
-                    <div class="img-post">
+                    <div class="img-post curtida">
                         <img src="assets/imgs/gato-telefone 1.png" alt="">
+                        <img class="like" src="assets/imgs/heart.png" alt="">
                     </div>
 
                     <div class="reactions-post">
@@ -257,7 +262,7 @@
                         <div class="icons-coments mr ">
                             <img src="assets/imgs/shocked (1).png" alt="">
                             <img src="assets/imgs/love.png" alt="">
-                        </div>
+                        </div> 
                        
                     </div>
                 </div>
@@ -275,7 +280,7 @@
 
                     </div>
 
-                    <div class="video-post">
+                    <div class="video-post curtida">
                         <video src="assets/videos/video03.mp4"></video>
                         <img class="btn-play" src="assets/imgs/toque.png" alt="">
                         <p class="time-video"></p>
@@ -283,6 +288,8 @@
 
                         <img class="btnNoMuted" src="assets/imgs/volume.png" alt="">
                         <img class="btnMuted" src="assets/imgs/mute.png" alt="">
+
+                        <img class="like" src="assets/imgs/heart.png" alt="">
 
                     </div>
 
@@ -339,7 +346,7 @@
 
                     </div>
 
-                    <div class="video-post">
+                    <div class="video-post curtida">
                         <video src="assets/videos/video02.mp4"></video>
                         <img class="btn-play" src="assets/imgs/toque.png" alt="">
                         <p class="time-video"></p>
@@ -347,6 +354,8 @@
 
                         <img class="btnNoMuted" src="assets/imgs/volume.png" alt="">
                         <img class="btnMuted" src="assets/imgs/mute.png" alt="">
+
+                        <img class="like" src="assets/imgs/heart.png" alt="">
 
                     </div>
 
@@ -392,6 +401,8 @@
 
             </div>
         </div>
+
+        
 
         <div id="menu-lateral">
 
@@ -596,6 +607,27 @@
 
         })
     
+
+        //FUNCAO DE CURTIDA NO VIDEO
+        document.querySelectorAll('.curtida').forEach((el)=>{ 
+
+           // console.log(el)
+        
+            el.addEventListener('dblclick', ()=>{
+            //console.log('db')
+
+            let like = el.lastElementChild
+            
+            like.style.display = 'block'
+
+            setTimeout(() => {
+                like.style.display = 'none';
+            },325);
+
+        
+            })
+        })
+         
         
         
     </script>

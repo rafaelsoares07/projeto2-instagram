@@ -232,6 +232,8 @@ main{
     border: 1px solid #C7C7C7;
     margin-bottom: 30px;
     
+    
+    
 }
 
 .cabecalho-post{
@@ -259,6 +261,7 @@ align-items: center;
 
 .img-post{
     height: 600px;
+    position: relative;
    
 }
 
@@ -308,6 +311,21 @@ align-items: center;
     margin: auto;
     
 }
+
+.like{
+    width: 100px;
+    position: absolute; 
+    display: none;
+
+    /*Truque para centralizar elemento no meio*/
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto; 
+}
+ 
+
 
 .btnNoMuted , .btnMuted{
 
