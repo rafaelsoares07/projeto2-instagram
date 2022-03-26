@@ -279,6 +279,7 @@
                         <video src="assets/videos/video03.mp4"></video>
                         <img class="btn-play" src="assets/imgs/toque.png" alt="">
                         <p class="time-video"></p>
+                        <img class="btn-pause" src="assets/imgs/pausa.png" alt="">
 
                     </div>
 
@@ -339,6 +340,7 @@
                         <video src="assets/videos/video02.mp4"></video>
                         <img class="btn-play" src="assets/imgs/toque.png" alt="">
                         <p class="time-video"></p>
+                        <img class="btn-pause" src="assets/imgs/pausa.png" alt="">
 
                     </div>
 
@@ -500,32 +502,50 @@
     <script>
 
         document.querySelectorAll('.btn-play').forEach((el)=>{
+
             el.addEventListener('click', ()=>{
 
-               let video = el.previousElementSibling;
-                let tempoVideo = el.nextElementSibling;
-                console.log(video.duration);
-                let minutos = parseInt(video.duration/60);
-                let segundos = Math.ceil(video.duration%60)
-                
-
-                if(segundos<10){
-                    tempoVideo.textContent = minutos+':0'+segundos; 
-                }
-
-                else{
-                    tempoVideo.textContent = minutos+':'+segundos; 
-                }
-
+                el.style.display = 'none';
             
+                var video = el.previousElementSibling;
+                var tempoVideo = el.nextElementSibling;
+                var pause = tempoVideo.nextElementSibling;
 
-                video.play();
+                pause.style.display = 'block';
                 
                 
+                video.addEventListener('timeupdate',()=>{
+                    let duracao = video.duration
+                    let resto = video.currentTime
+
+                    let resultado = duracao - resto;
+
+                    let minutos = parseInt(resultado/60);
+                    let segundos = Math.ceil(resultado%60)
+
+                    if(segundos<10){
+                    tempoVideo.textContent = minutos+':0'+segundos; 
+                    }
+                     else{
+                    tempoVideo.textContent = minutos+':'+segundos; 
+                     }
+                })
+                video.play();             
                 
             })
         })
 
+        document.querySelectorAll('.btn-pause').forEach((el)=>{
+            el.addEventListener('click',()=>{
+                el.style.display = 'none';
+
+                let video = el.previousElementSibling.previousElementSibling.previousElementSibling.pause();
+                let btnPlay = el.previousElementSibling.previousElementSibling;
+                btnPlay.style.display = "block"
+                
+            })
+        })
+    
         
         
     </script>
