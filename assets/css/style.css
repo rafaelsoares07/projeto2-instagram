@@ -8,6 +8,10 @@
 strong{
     font-weight: bold;
 }
+
+.mb-1{
+    margin-bottom: 8px;
+}
 .ml{
     margin-left: 8px;
 }
@@ -404,6 +408,25 @@ align-items: center;
     margin-bottom: 10px;
 }
 
+.coments-outras-pessoas p {
+    font-size: 15px;
+}
+.coments-outras-pessoas em{
+    font-weight: bold;
+}
+
+
+.coments-outras-pessoas img{
+    width: 16px;
+    margin-right: 8px;
+}
+
+.comentarios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .interacoes{
     display: flex;
@@ -443,9 +466,14 @@ align-items: center;
     height: 20px;
     font-weight: bold;
     cursor: pointer;
+
+    transition-property: color;
+    transition-duration: 0.3s;
+    
 }
 
 .area-input-coments button:hover{
+
     color: #0095f6;
 }
 
